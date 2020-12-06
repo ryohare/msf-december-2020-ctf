@@ -1,0 +1,3 @@
+http://local:8092/login.php (Status: 200)
+http://local:8092/index.php (Status: 200)
+http://local:8092/server-status (Status: 403)
