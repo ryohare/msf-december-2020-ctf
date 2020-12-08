@@ -1,0 +1,4 @@
+http://localhost:8080/index.html (Status: 200)
+http://localhost:8080/login.php (Status: 200)
+http://localhost:8080/answer.php (Status: 200)
+http://localhost:8080/server-status (Status: 403)

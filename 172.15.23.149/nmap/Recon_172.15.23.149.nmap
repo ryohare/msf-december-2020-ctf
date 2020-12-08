@@ -1,0 +1,56 @@
+[0;32m---------------------Recon Recommendations----------------------
+[0m
+[0m
+[0;33mWeb Servers Recon:
+[0m
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:80 -o recon/gobuster_172.15.23.149_80.txt
+nikto -host 172.15.23.149:80 | tee recon/nikto_172.15.23.149_80.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:8080 -o recon/gobuster_172.15.23.149_8080.txt
+nikto -host 172.15.23.149:8080 | tee recon/nikto_172.15.23.149_8080.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:|_http-open-proxy: Proxy might be redirecting requests -o recon/gobuster_172.15.23.149_|_http-open-proxy: Proxy might be redirecting requests.txt
+nikto -host 172.15.23.149:|_http-open-proxy: Proxy might be redirecting requests | tee recon/nikto_172.15.23.149_|_http-open-proxy: Proxy might be redirecting requests.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:8200 -o recon/gobuster_172.15.23.149_8200.txt
+nikto -host 172.15.23.149:8200 | tee recon/nikto_172.15.23.149_8200.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:8888 -o recon/gobuster_172.15.23.149_8888.txt
+nikto -host 172.15.23.149:8888 | tee recon/nikto_172.15.23.149_8888.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:9000 -o recon/gobuster_172.15.23.149_9000.txt
+nikto -host 172.15.23.149:9000 | tee recon/nikto_172.15.23.149_9000.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:9001 -o recon/gobuster_172.15.23.149_9001.txt
+nikto -host 172.15.23.149:9001 | tee recon/nikto_172.15.23.149_9001.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:9010 -o recon/gobuster_172.15.23.149_9010.txt
+nikto -host 172.15.23.149:9010 | tee recon/nikto_172.15.23.149_9010.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:4545 -o recon/gobuster_172.15.23.149_4545.txt
+nikto -host 172.15.23.149:4545 | tee recon/nikto_172.15.23.149_4545.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:6868 -o recon/gobuster_172.15.23.149_6868.txt
+nikto -host 172.15.23.149:6868 | tee recon/nikto_172.15.23.149_6868.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:8092 -o recon/gobuster_172.15.23.149_8092.txt
+nikto -host 172.15.23.149:8092 | tee recon/nikto_172.15.23.149_8092.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:8101 -o recon/gobuster_172.15.23.149_8101.txt
+nikto -host 172.15.23.149:8101 | tee recon/nikto_172.15.23.149_8101.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:8123 -o recon/gobuster_172.15.23.149_8123.txt
+nikto -host 172.15.23.149:8123 | tee recon/nikto_172.15.23.149_8123.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:8201 -o recon/gobuster_172.15.23.149_8201.txt
+nikto -host 172.15.23.149:8201 | tee recon/nikto_172.15.23.149_8201.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:8202 -o recon/gobuster_172.15.23.149_8202.txt
+nikto -host 172.15.23.149:8202 | tee recon/nikto_172.15.23.149_8202.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 30 -x html,php -u http://172.15.23.149:9007 -o recon/gobuster_172.15.23.149_9007.txt
+nikto -host 172.15.23.149:9007 | tee recon/nikto_172.15.23.149_9007.txt
+
+
+
+

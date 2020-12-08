@@ -1,0 +1,22 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          172.15.23.149
++ Target Hostname:    172.15.23.149
++ Target Port:        9000
++ Start Time:         2020-12-04 22:29:07 (GMT0)
+---------------------------------------------------------------------------
++ Server: WEBrick/1.6.0 (Ruby/2.7.0/2019-12-25)
++ Uncommon header 'x-cascade' found, with contents: pass
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Allowed HTTP Methods: GET, HEAD, POST, OPTIONS 
++ 7925 requests: 8 error(s) and 2 item(s) reported on remote host
++ End Time:           2020-12-04 22:33:28 (GMT0) (261 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+      *********************************************************************
+      Portions of the server's headers (WEBrick/1.6.0) are not in
+      the Nikto 2.1.6 database or are newer than the known string. Would you like
+      to submit this information (*no server specific data*) to CIRT.net
+      for a Nikto update (or you may email to sullo@cirt.net) (y/n)? 

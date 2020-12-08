@@ -1,0 +1,14 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          172.15.23.149
++ Target Hostname:    172.15.23.149
++ Target Port:        9001
++ Start Time:         2020-12-04 22:33:29 (GMT0)
+---------------------------------------------------------------------------
++ Server: thin
++ Uncommon header 'x-cascade' found, with contents: pass
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ 7928 requests: 11 error(s) and 1 item(s) reported on remote host
++ End Time:           2020-12-05 00:20:32 (GMT0) (6423 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

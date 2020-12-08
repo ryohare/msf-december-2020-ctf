@@ -19,3 +19,9 @@ Not Connected --[connect event]--> Connected --[Auth Pass]--> Authenticated --[d
 					       [Auth Fail]--> Not Auth --[go to Connected]	
 
 So, we need to get an auth bypass with no knowledge of the server side decision making. We do know we are sending the AuthState java object which we can get the definition from via jd-gui. Thus, we can probably, using ysoserial, create a payload we can send which will either bypass the authentication or create an RCE event to get  a shell or to pull the file.
+
+Link for follow up research: https://medium.com/bugbountywriteup/a-comprehensive-guide-to-java-serialization-vulnerability-18fad6e37b64
+
+A good lab for this is deserlab.
+
+

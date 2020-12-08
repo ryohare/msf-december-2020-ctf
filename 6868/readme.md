@@ -1,7 +1,7 @@
 Found 2 directories in testing which are shared. The first was found via the images links on the main page the second was discovered in the json returns from the create user option.
 
 Dirs
-* images/<INITIALS>/0
+* files/<INITIALS>/0
 * notes/<INITALS>/0
 
 Manually stepped through the images which were shared already via the main page. They are

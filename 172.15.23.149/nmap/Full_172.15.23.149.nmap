@@ -1,0 +1,99 @@
+# Nmap 7.80 scan initiated Fri Dec  4 21:46:23 2020 as: nmap -Pn -sCV -p1337,4545,6868,8092,8101,8123,8201,8202,9007,9008 -oN nmap/Full_172.15.23.149.nmap 172.15.23.149
+Nmap scan report for 172.15.23.149
+Host is up (0.00047s latency).
+
+PORT     STATE SERVICE     VERSION
+1337/tcp open  waste?
+| fingerprint-strings: 
+|   GenericLines, GetRequest, HTTPOptions, RTSPRequest: 
+|     Welcome to the '9 of Clubs' service.
+|     -------------------------------
+|     Please choose an option:
+|     Send contact info
+|     Greetings
+|     Send feedback
+|     Exit
+|     Unknown option.
+|     Welcome to the '9 of Clubs' service.
+|     -------------------------------
+|     Please choose an option:
+|     Send contact info
+|     Greetings
+|     Send feedback
+|     Exit
+|   NULL: 
+|     Welcome to the '9 of Clubs' service.
+|     -------------------------------
+|     Please choose an option:
+|     Send contact info
+|     Greetings
+|     Send feedback
+|_    Exit
+4545/tcp open  http        SimpleHTTPServer 0.6 (Python 3.8.5)
+|_http-server-header: SimpleHTTP/0.6 Python/3.8.5
+|_http-title: Directory listing for /
+6868/tcp open  http        WSGIServer 0.2 (Python 3.8.5)
+|_http-server-header: WSGIServer/0.2 CPython/3.8.5
+|_http-title: Photos5u
+8092/tcp open  http        Apache httpd 2.4.38 ((Debian))
+|_http-server-header: Apache/2.4.38 (Debian)
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+8101/tcp open  http        Apache httpd 2.4.38 ((Debian))
+|_http-server-header: Apache/2.4.38 (Debian)
+|_http-title: 5 of Clubs Frontend
+8123/tcp open  http        WSGIServer 0.2 (Python 3.8.5)
+|_http-server-header: WSGIServer/0.2 CPython/3.8.5
+|_http-title: Salt Free Hashes
+8201/tcp open  http        nginx 1.19.5
+|_http-server-header: nginx/1.19.5
+|_http-title: Did not follow redirect to http://intranet.metasploit.ctf:8201
+8202/tcp open  http        nginx 1.19.5
+|_http-server-header: nginx/1.19.5
+|_http-title: Site doesn't have a title (text/html).
+9007/tcp open  http        Apache httpd 2.4.46 ((Unix))
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.46 (Unix)
+|_http-title: Index of /
+9008/tcp open  java-object Java Object Serialization
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1337-TCP:V=7.80%I=7%D=12/4%Time=5FCAAE36%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,9B,"\nWelcome\x20to\x20the\x20'9\x20of\x20Clubs'\x20service\.\n-----
+SF:--------------------------\nPlease\x20choose\x20an\x20option:\n1\.\x20S
+SF:end\x20contact\x20info\n2\.\x20Greetings\n3\.\x20Send\x20feedback\n0\.\
+SF:x20Exit\n\0")%r(GenericLines,146,"\nWelcome\x20to\x20the\x20'9\x20of\x2
+SF:0Clubs'\x20service\.\n-------------------------------\nPlease\x20choose
+SF:\x20an\x20option:\n1\.\x20Send\x20contact\x20info\n2\.\x20Greetings\n3\
+SF:.\x20Send\x20feedback\n0\.\x20Exit\n\0Unknown\x20option\.\n\nWelcome\x2
+SF:0to\x20the\x20'9\x20of\x20Clubs'\x20service\.\n------------------------
+SF:-------\nPlease\x20choose\x20an\x20option:\n1\.\x20Send\x20contact\x20i
+SF:nfo\n2\.\x20Greetings\n3\.\x20Send\x20feedback\n0\.\x20Exit\n\0")%r(Get
+SF:Request,146,"\nWelcome\x20to\x20the\x20'9\x20of\x20Clubs'\x20service\.\
+SF:n-------------------------------\nPlease\x20choose\x20an\x20option:\n1\
+SF:.\x20Send\x20contact\x20info\n2\.\x20Greetings\n3\.\x20Send\x20feedback
+SF:\n0\.\x20Exit\n\0Unknown\x20option\.\n\nWelcome\x20to\x20the\x20'9\x20o
+SF:f\x20Clubs'\x20service\.\n-------------------------------\nPlease\x20ch
+SF:oose\x20an\x20option:\n1\.\x20Send\x20contact\x20info\n2\.\x20Greetings
+SF:\n3\.\x20Send\x20feedback\n0\.\x20Exit\n\0")%r(HTTPOptions,146,"\nWelco
+SF:me\x20to\x20the\x20'9\x20of\x20Clubs'\x20service\.\n-------------------
+SF:------------\nPlease\x20choose\x20an\x20option:\n1\.\x20Send\x20contact
+SF:\x20info\n2\.\x20Greetings\n3\.\x20Send\x20feedback\n0\.\x20Exit\n\0Unk
+SF:nown\x20option\.\n\nWelcome\x20to\x20the\x20'9\x20of\x20Clubs'\x20servi
+SF:ce\.\n-------------------------------\nPlease\x20choose\x20an\x20option
+SF::\n1\.\x20Send\x20contact\x20info\n2\.\x20Greetings\n3\.\x20Send\x20fee
+SF:dback\n0\.\x20Exit\n\0")%r(RTSPRequest,146,"\nWelcome\x20to\x20the\x20'
+SF:9\x20of\x20Clubs'\x20service\.\n-------------------------------\nPlease
+SF:\x20choose\x20an\x20option:\n1\.\x20Send\x20contact\x20info\n2\.\x20Gre
+SF:etings\n3\.\x20Send\x20feedback\n0\.\x20Exit\n\0Unknown\x20option\.\n\n
+SF:Welcome\x20to\x20the\x20'9\x20of\x20Clubs'\x20service\.\n--------------
+SF:-----------------\nPlease\x20choose\x20an\x20option:\n1\.\x20Send\x20co
+SF:ntact\x20info\n2\.\x20Greetings\n3\.\x20Send\x20feedback\n0\.\x20Exit\n
+SF:\0");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9008-TCP:V=7.80%I=7%D=12/4%Time=5FCAAE36%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,4,"\xac\xed\0\x05");
+MAC Address: 0A:B4:E8:DF:4F:7F (Unknown)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec  4 21:48:51 2020 -- 1 IP address (1 host up) scanned in 148.12 seconds

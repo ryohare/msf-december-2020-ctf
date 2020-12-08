@@ -1,0 +1,28 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          172.15.23.149
++ Target Hostname:    172.15.23.149
++ Target Port:        8200
++ Start Time:         2020-12-04 22:28:09 (GMT0)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.38 (Debian)
++ Retrieved x-powered-by header: PHP/7.1.33
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ RFC-1918 IP address found in the 'location' header. The IP is "172.18.0.2".
++ OSVDB-630: The web server may reveal its internal or real IP in the Location header via a request to /images over HTTP/1.0. The value is "172.18.0.2".
++ Web Server returns a valid response with junk HTTP methods, this may cause false positives.
++ OSVDB-3233: /icons/README: Apache default file found.
++ 7917 requests: 0 error(s) and 8 item(s) reported on remote host
++ End Time:           2020-12-04 22:28:56 (GMT0) (47 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+      *********************************************************************
+      Portions of the server's headers (Apache/2.4.38) are not in
+      the Nikto 2.1.6 database or are newer than the known string. Would you like
+      to submit this information (*no server specific data*) to CIRT.net
+      for a Nikto update (or you may email to sullo@cirt.net) (y/n)? 

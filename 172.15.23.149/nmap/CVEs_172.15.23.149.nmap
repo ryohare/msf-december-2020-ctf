@@ -1,0 +1,159 @@
+# Nmap 7.80 scan initiated Fri Dec  4 21:48:52 2020 as: nmap -Pn -sV --script vulners --script-args mincvss=7.0 -p80,1080,5555,8080,8200,8888,9000,9001,9009,9010,1337,4545,6868,8092,8101,8123,8201,8202,9007,9008, -oN nmap/CVEs_172.15.23.149.nmap 172.15.23.149
+Nmap scan report for 172.15.23.149
+Host is up (0.00068s latency).
+
+PORT     STATE SERVICE     VERSION
+80/tcp   open  http        nginx 1.19.5
+|_http-server-header: nginx/1.19.5
+1080/tcp open  socks5      (No authentication; connection failed)
+1337/tcp open  waste?
+| fingerprint-strings: 
+|   GenericLines, GetRequest, HTTPOptions, RTSPRequest: 
+|     Welcome to the '9 of Clubs' service.
+|     -------------------------------
+|     Please choose an option:
+|     Send contact info
+|     Greetings
+|     Send feedback
+|     Exit
+|     Unknown option.
+|     Welcome to the '9 of Clubs' service.
+|     -------------------------------
+|     Please choose an option:
+|     Send contact info
+|     Greetings
+|     Send feedback
+|     Exit
+|   NULL: 
+|     Welcome to the '9 of Clubs' service.
+|     -------------------------------
+|     Please choose an option:
+|     Send contact info
+|     Greetings
+|     Send feedback
+|_    Exit
+4545/tcp open  http        SimpleHTTPServer 0.6 (Python 3.8.5)
+|_http-server-header: SimpleHTTP/0.6 Python/3.8.5
+5555/tcp open  telnet
+| fingerprint-strings: 
+|   NULL: 
+|     [HSCORE: 0
+|     [HSCORE: 1
+|     [HSCORE: 2
+|     [HSCORE: 3
+|_    [HSCORE: 4
+6868/tcp open  http        WSGIServer 0.2 (Python 3.8.5)
+|_http-server-header: WSGIServer/0.2 CPython/3.8.5
+8080/tcp open  http        Apache httpd 2.4.38 ((Debian))
+|_http-server-header: Apache/2.4.38 (Debian)
+8092/tcp open  http        Apache httpd 2.4.38 ((Debian))
+|_http-server-header: Apache/2.4.38 (Debian)
+8101/tcp open  http        Apache httpd 2.4.38 ((Debian))
+|_http-server-header: Apache/2.4.38 (Debian)
+8123/tcp open  http        WSGIServer 0.2 (Python 3.8.5)
+|_http-server-header: WSGIServer/0.2 CPython/3.8.5
+8200/tcp open  http        Apache httpd 2.4.38 ((Debian))
+|_http-server-header: Apache/2.4.38 (Debian)
+8201/tcp open  http        nginx 1.19.5
+|_http-server-header: nginx/1.19.5
+8202/tcp open  http        nginx 1.19.5
+|_http-server-header: nginx/1.19.5
+8888/tcp open  http        Werkzeug httpd 1.0.1 (Python 3.8.5)
+|_http-server-header: Werkzeug/1.0.1 Python/3.8.5
+9000/tcp open  http        WEBrick httpd 1.6.0 (Ruby 2.7.0 (2019-12-25))
+|_http-server-header: WEBrick/1.6.0 (Ruby/2.7.0/2019-12-25)
+9001/tcp open  http        Thin httpd
+|_http-server-header: thin
+9007/tcp open  http        Apache httpd 2.4.46 ((Unix))
+|_http-server-header: Apache/2.4.46 (Unix)
+9008/tcp open  java-object Java Object Serialization
+9009/tcp open  ssh         OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+9010/tcp open  http        Apache httpd 2.4.38
+|_http-server-header: Apache/2.4.38 (Debian)
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1337-TCP:V=7.80%I=7%D=12/4%Time=5FCAAECA%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,9B,"\nWelcome\x20to\x20the\x20'9\x20of\x20Clubs'\x20service\.\n-----
+SF:--------------------------\nPlease\x20choose\x20an\x20option:\n1\.\x20S
+SF:end\x20contact\x20info\n2\.\x20Greetings\n3\.\x20Send\x20feedback\n0\.\
+SF:x20Exit\n\0")%r(GenericLines,146,"\nWelcome\x20to\x20the\x20'9\x20of\x2
+SF:0Clubs'\x20service\.\n-------------------------------\nPlease\x20choose
+SF:\x20an\x20option:\n1\.\x20Send\x20contact\x20info\n2\.\x20Greetings\n3\
+SF:.\x20Send\x20feedback\n0\.\x20Exit\n\0Unknown\x20option\.\n\nWelcome\x2
+SF:0to\x20the\x20'9\x20of\x20Clubs'\x20service\.\n------------------------
+SF:-------\nPlease\x20choose\x20an\x20option:\n1\.\x20Send\x20contact\x20i
+SF:nfo\n2\.\x20Greetings\n3\.\x20Send\x20feedback\n0\.\x20Exit\n\0")%r(Get
+SF:Request,146,"\nWelcome\x20to\x20the\x20'9\x20of\x20Clubs'\x20service\.\
+SF:n-------------------------------\nPlease\x20choose\x20an\x20option:\n1\
+SF:.\x20Send\x20contact\x20info\n2\.\x20Greetings\n3\.\x20Send\x20feedback
+SF:\n0\.\x20Exit\n\0Unknown\x20option\.\n\nWelcome\x20to\x20the\x20'9\x20o
+SF:f\x20Clubs'\x20service\.\n-------------------------------\nPlease\x20ch
+SF:oose\x20an\x20option:\n1\.\x20Send\x20contact\x20info\n2\.\x20Greetings
+SF:\n3\.\x20Send\x20feedback\n0\.\x20Exit\n\0")%r(HTTPOptions,146,"\nWelco
+SF:me\x20to\x20the\x20'9\x20of\x20Clubs'\x20service\.\n-------------------
+SF:------------\nPlease\x20choose\x20an\x20option:\n1\.\x20Send\x20contact
+SF:\x20info\n2\.\x20Greetings\n3\.\x20Send\x20feedback\n0\.\x20Exit\n\0Unk
+SF:nown\x20option\.\n\nWelcome\x20to\x20the\x20'9\x20of\x20Clubs'\x20servi
+SF:ce\.\n-------------------------------\nPlease\x20choose\x20an\x20option
+SF::\n1\.\x20Send\x20contact\x20info\n2\.\x20Greetings\n3\.\x20Send\x20fee
+SF:dback\n0\.\x20Exit\n\0")%r(RTSPRequest,146,"\nWelcome\x20to\x20the\x20'
+SF:9\x20of\x20Clubs'\x20service\.\n-------------------------------\nPlease
+SF:\x20choose\x20an\x20option:\n1\.\x20Send\x20contact\x20info\n2\.\x20Gre
+SF:etings\n3\.\x20Send\x20feedback\n0\.\x20Exit\n\0Unknown\x20option\.\n\n
+SF:Welcome\x20to\x20the\x20'9\x20of\x20Clubs'\x20service\.\n--------------
+SF:-----------------\nPlease\x20choose\x20an\x20option:\n1\.\x20Send\x20co
+SF:ntact\x20info\n2\.\x20Greetings\n3\.\x20Send\x20feedback\n0\.\x20Exit\n
+SF:\0");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port5555-TCP:V=7.80%I=7%D=12/4%Time=5FCAAECA%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,699,"\xff\xfd\"\xff\xfb\x01\x1b\[2J\x1b\[HSCORE:\x200\r\n\|\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\^\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\|\r\n\x1b\[2J\x1b\[HSCORE:\x201\r\n\|\x20\x20\x200\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r
+SF:\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\|\r\n\|\x20\^\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:|\r\n\x1b\[2J\x1b\[HSCORE:\x202\r\n\|0\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\|\r\n\|\x20\x20\x200\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\
+SF:n\|\x20\^\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\x1b\[2J\x1b
+SF:\[HSCORE:\x203\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200\x20\|
+SF:\r\n\|0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20
+SF:\x200\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\
+SF:r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\^\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\x1b\[2J\x1b\[HSCORE:\x204\r\n\|
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x200\x20\x20\x20\|\r\n\|\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x200\x20\|\r\n\|0\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x200\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\|\r\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r
+SF:\n\|\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\|\r\n\|\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9008-TCP:V=7.80%I=7%D=12/4%Time=5FCAAECA%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,4,"\xac\xed\0\x05");
+MAC Address: 0A:B4:E8:DF:4F:7F (Unknown)
+Service Info: Host: 172.17.0.15; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec  4 21:51:24 2020 -- 1 IP address (1 host up) scanned in 152.84 seconds
