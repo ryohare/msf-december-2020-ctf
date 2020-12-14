@@ -76,3 +76,15 @@ Honestly, with middle names like "Ulysses Denise Donnoly" you'd think she'd be h
 ```
 
 The last one, something about IDOR and the middle names it seems.
+
+## Answer
+Well, what I missed was this (which I kinda caught, but didnt connect all the dots).
+
+1. We know we can use multiple words for middle names
+2. Know the admin's name is beth
+3. MISSED: that her last name is yager, which was referenced in one of the messages, thus initils BY which did not git during the brute force attempts.
+4. Know the middle name is key
+5. Know the initials make some word.
+
+The leap I missed as missing the last name, then trying the multiple middle names to for the word BUDDY, which is the correct object reference.
+[answer](https://blog.ikuamike.io/posts/2020/metasploitctf2020/)

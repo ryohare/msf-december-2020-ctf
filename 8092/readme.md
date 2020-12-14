@@ -44,6 +44,10 @@ So based on the research, it seems to be the issue is type juggling with PHP. Th
  
 The only way I can find to enter non-string data is with an array.
 
+## Answer
+What did I miss?
+* I can pass in an array to the password field which would cause the hash function to return a NULL, which when compared to `hash=` equates to true.
+[answer](https://rushisec.net/metasploit-ctf-2020-writeup/#4ofclubsport8092)
 
 ## Refs
 https://www.netsparker.com/blog/web-security/php-type-juggling-vulnerabilities/

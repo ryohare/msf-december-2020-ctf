@@ -9,3 +9,8 @@ b"Thanks for your feedback!\n\nWelcome to the '9 of Clubs' service.\n-----------
 
 
 No obvious crashes. All the input anomalies can be explained via the IO buffering
+
+## LL
+Looks like this was a format string issue. Never checked for that. Should remember to do that in the future moving forward.
+
+[anwser](https://sec.stealthcopter.com/metasploit-community-ctf-2020-dec-write-up-9-of-clubs-port-1337)
