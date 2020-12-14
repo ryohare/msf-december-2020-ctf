@@ -25,3 +25,12 @@ Link for follow up research: https://medium.com/bugbountywriteup/a-comprehensive
 A good lab for this is deserlab.
 
 
+
+## What Went Wrong?
+Reading a solution, it was on the correct track, its just unclear where mine went wrong.
+
+According to the writeup, code was added to set the authorized flag to true in the returned `AuthState` object so it passed the check. The only thing which may have been my issue is that the AuthState object was sent on the download request and mine was still set to `Not Authorized` so the download failed later in the loop.
+
+## Answers
+[Answer 1](https://alexsanford.blog/2020/12/11/metasploit-community-ctf-december-2020/)
+
